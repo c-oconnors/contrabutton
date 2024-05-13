@@ -1,1 +1,33 @@
-<div class="contra-hire-me-button" data-analyticsUserId="ef33e86a-eae6-4efe-aa03-75b1b0bde233" data-theme="light" data-username="coconnors"></div><script async src="https://contra.com/static/embed/sdk.js" charset="utf-8"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contra Hire Me Button</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contra-hire-me-button" data-analyticsUserId="ef33e86a-eae6-4efe-aa03-75b1b0bde233" data-theme="light" data-username="coconnors"></div>
+    <script async src="https://contra.com/static/embed/sdk.js" charset="utf-8"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var contraButton = document.querySelector('.contra-hire-me-button');
+            if (contraButton) {
+                // Set specific styles to override default SDK styles
+                contraButton.style.margin = '0';
+                contraButton.style.padding = '0';
+                // You can add more style changes here
+            }
+        });
+    </script>
+</body>
+</html>
